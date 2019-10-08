@@ -1,0 +1,64 @@
+# hexo-generator-searchdb
+
+[![hexo-image]][hexo-url]
+[![node-image]][node-url]
+[![npm-image]][npm-url]
+[![lic-image]](LICENSE)
+
+Generate search data for Hexo 3.0. This plugin is used for generating a search index file, which contains all the neccessary data of your articles that you can use to write a local search engine for your blog. Supports both XML and JSON format output.
+
+## Install
+
+![size-image]
+[![dm-image]][npm-url]
+[![dt-image]][npm-url]
+
+``` bash
+$ npm install hexo-generator-searchdb --save
+```
+
+## Options
+
+You can configure this plugin in your root `_config.yml`. All the arguments are optional.
+
+``` yaml
+search:
+  path: search.xml
+  field: post
+  content: true
+  format: html
+```
+
+- **path** - file path. By default is `search.xml`. If the file extension is `.json`, the output format will be JSON. Otherwise XML format file will be exported.
+- **field** - the search scope you want to search, you can chose:
+  * **post** - (Default) will only covers all the posts of your blog.
+  * **page** - will only covers all the pages of your blog.
+  * **all** - will covers all the posts and pages of your blog.
+- **content** - whether contains the whole content of each article. If `false`, the generated results only cover title and other meta info without mainbody. By default is `true`.
+- **format** - the form of the page contents, options are:
+  * **html** (Default) - original html string being minified.
+  * **striptags** - original html string being minified, and remove all the tags.
+  * **raw** - markdown text of each posts or pages.
+
+## FAQ
+
+### What's this plugin supposed to do?
+
+This plugin is used for generating a xml / json file from your Hexo blog that provides data for searching.
+
+### Where's this file saved to?
+
+After executing `hexo g` you will get the generated result at your public folder.
+
+[hexo-image]: https://img.shields.io/badge/hexo-%3E%3D%203.0-blue?style=flat-square
+[node-image]: https://img.shields.io/node/v/hexo-generator-searchdb?style=flat-square
+[npm-image]: https://img.shields.io/npm/v/hexo-generator-searchdb?style=flat-square
+[lic-image]: https://img.shields.io/npm/l/hexo-generator-searchdb?style=flat-square
+
+[size-image]: https://img.shields.io/github/languages/code-size/theme-next/hexo-generator-searchdb?style=flat-square
+[dm-image]: https://img.shields.io/npm/dm/hexo-generator-searchdb?style=flat-square
+[dt-image]: https://img.shields.io/npm/dt/hexo-generator-searchdb?style=flat-square
+
+[hexo-url]: https://hexo.io
+[node-url]: https://nodejs.org/en/download/releases
+[npm-url]: https://www.npmjs.com/package/hexo-generator-searchdb

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  {%- for article in articles %}
+  <entry>
+    <title>{{ article.title | safe }}</title>
+    <url>{{ article.url }}</url>
+    <content><![CDATA[{{ article.content | safe }}]]></content>
+    {%- if article.categories %}
+      <categories>
+        {%- for category in article.categories %}
+        <category>{{ category }}</category>
+        {%- endfor %}
+      </categories>
+    {%- endif %}
+    {%- if article.tags %}
+      <tags>
+        {%- for tag in article.tags %}
+        <tag>{{ tag }}</tag>
+        {%- endfor %}
+      </tags>
+    {%- endif %}
+  </entry>
+  {%- endfor %}
+</search>

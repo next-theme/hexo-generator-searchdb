@@ -1,0 +1,30 @@
+{
+  "name": "hexo-generator-searchdb",
+  "version": "1.0.8",
+  "description": "Seach generator plugin for Hexo",
+  "main": "index",
+  "directories": {
+    "lib": "./lib"
+  },
+  "engines": {
+    "node": ">=8.6.0"
+  },
+  "keywords": [
+    "hexo",
+    "search",
+    "generator"
+  ],
+  "author": "Mimi <stevenjoezhang@gmail.com> (https://zhangshuqiao.org)",
+  "license": "MIT",
+  "dependencies": {
+    "nunjucks": "^3.2.0"
+  },
+  "bugs": {
+    "url": "https://github.com/theme-next/hexo-generator-searchdb/issues"
+  },
+  "homepage": "https://github.com/theme-next/hexo-generator-searchdb#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theme-next/hexo-generator-searchdb.git"
+  }
+}
