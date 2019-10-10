@@ -1,8 +1,8 @@
 # hexo-generator-searchdb
 
-[![hexo-image]][hexo-url]
-[![node-image]][node-url]
 [![npm-image]][npm-url]
+[![node-image]][node-url]
+[![hexo-image]][hexo-url]
 [![lic-image]](LICENSE)
 
 Generate search data for Hexo 3.0. This plugin is used for generating a search index file, which contains all the neccessary data of your articles that you can use to write a local search engine for your blog. Supports both XML and JSON format output.
@@ -50,15 +50,25 @@ This plugin is used for generating a xml / json file from your Hexo blog that pr
 
 After executing `hexo g` you will get the generated result at your public folder.
 
-[hexo-image]: https://img.shields.io/badge/hexo-%3E%3D%203.0-blue?style=flat-square
-[node-image]: https://img.shields.io/node/v/hexo-generator-searchdb?style=flat-square
+### How to use this plugin in my Hexo blog?
+
+You have two choices:
+
+* you don't want to write search engine by yourself. There are many themes that take use this plugin for local searching that works out of box.
+* you are familiar with fetch API or jQuery Ajax and would like to write your own search engine. You can implement one by yourself according to the theme NexT. Read the [source code](https://github.com/theme-next/hexo-theme-next) of this theme. Generally there are 3 steps:
+  1. write a [search view](https://github.com/theme-next/hexo-theme-next/blob/v7.4.1/layout/_partials/search/localsearch.swig). This is the place for displaying a search form and search results ;
+  2. write a [search script](https://github.com/theme-next/hexo-theme-next/blob/v7.4.1/source/js/local-search.js). This script tells the browser how to grab search data and filter out contents what we're searching;
+  3. tell hexo to [connect the above two part](https://github.com/theme-next/hexo-theme-next/blob/v7.4.1/layout/_third-party/search/localsearch.swig).
+
 [npm-image]: https://img.shields.io/npm/v/hexo-generator-searchdb?style=flat-square
+[node-image]: https://img.shields.io/node/v/hexo-generator-searchdb?style=flat-square
+[hexo-image]: https://img.shields.io/badge/hexo-%3E%3D%203.0-blue?style=flat-square
 [lic-image]: https://img.shields.io/npm/l/hexo-generator-searchdb?style=flat-square
 
 [size-image]: https://img.shields.io/github/languages/code-size/theme-next/hexo-generator-searchdb?style=flat-square
 [dm-image]: https://img.shields.io/npm/dm/hexo-generator-searchdb?style=flat-square
 [dt-image]: https://img.shields.io/npm/dt/hexo-generator-searchdb?style=flat-square
 
-[hexo-url]: https://hexo.io
-[node-url]: https://nodejs.org/en/download/releases
 [npm-url]: https://www.npmjs.com/package/hexo-generator-searchdb
+[node-url]: https://nodejs.org/en/download/releases
+[hexo-url]: https://hexo.io
