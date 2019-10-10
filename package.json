@@ -14,7 +14,11 @@
     "search",
     "generator"
   ],
-  "author": "Mimi <stevenjoezhang@gmail.com> (https://zhangshuqiao.org)",
+  "author": "wzpan <m@hahack.com> (https://github.com/wzpan)",
+  "maintainers": [
+    "Mimi <stevenjoezhang@gmail.com> (https://zhangshuqiao.org)",
+    "flashlab <zhengjuefei25@163.com>"
+  ],
   "license": "MIT",
   "dependencies": {
     "nunjucks": "^3.2.0"
