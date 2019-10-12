@@ -14,7 +14,7 @@ Generate search data for Hexo 3.0. This plugin is used for generating a search i
 [![dt-image]][npm-url]
 
 ``` bash
-$ npm install hexo-generator-searchdb --save
+$ npm install hexo-generator-searchdb
 ```
 
 ## Options
