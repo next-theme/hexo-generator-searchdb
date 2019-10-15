@@ -1,7 +1,7 @@
 {
   "name": "hexo-generator-searchdb",
   "version": "1.1.0",
-  "description": "Seach generator plugin for Hexo",
+  "description": "Seach data generator plugin for Hexo.",
   "main": "index",
   "directories": {
     "lib": "./lib"
@@ -14,7 +14,7 @@
     "search",
     "generator"
   ],
-  "author": "wzpan <m@hahack.com> (https://github.com/wzpan)",
+  "author": "NexT <support@theme-next.org> (https://theme-next.org)",
   "maintainers": [
     "Mimi <stevenjoezhang@gmail.com> (https://zhangshuqiao.org)",
     "flashlab <zhengjuefei25@163.com>"
