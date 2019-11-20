@@ -2,7 +2,7 @@
 <search>
   {%- for article in articles %}
   <entry>
-    <title>{{ article.title | safe }}</title>
+    <title>{{ article.title }}</title>
     <url>{{ article.url }}</url>
     <content><![CDATA[{{ article.content | safe }}]]></content>
     {%- if article.categories %}

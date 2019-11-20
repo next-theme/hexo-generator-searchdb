@@ -5,10 +5,10 @@
 const path = require('path');
 
 var config = hexo.config.search = Object.assign({
-  path     : 'search.xml',
-  field    : 'post',
-  content  : true,
-  format   : 'html'
+  path   : 'search.xml',
+  field  : 'post',
+  content: true,
+  format : 'html'
 }, hexo.config.search);
 
 // Add extension name if doesn't exist
