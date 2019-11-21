@@ -7,7 +7,7 @@
 
 Seach data generator plugin for Hexo.
 
-This plugin is used for generating a search index file, which contains all the neccessary data of your articles that you can use to write a local search engine for your blog. Supports both XML and JSON format output.
+This plugin is used for generating a search index file, which contains all the necessary data of your articles that you can use to write a local search engine for your blog. Supports both XML and JSON format output.
 
 ## Install
 
@@ -33,9 +33,9 @@ search:
 
 - **path** - file path. By default is `search.xml`. If the file extension is `.json`, the output format will be JSON. Otherwise XML format file will be exported.
 - **field** - the search scope you want to search, you can chose:
-  * **post** - (Default) will only covers all the posts of your blog.
-  * **page** - will only covers all the pages of your blog.
-  * **all** - will covers all the posts and pages of your blog.
+  * **post** (Default) - will only cover all the posts of your blog.
+  * **page** - will only cover all the pages of your blog.
+  * **all** - will cover all the posts and pages of your blog.
 - **content** - whether contains the whole content of each article. If `false`, the generated results only cover title and other meta info without mainbody. By default is `true`.
 - **format** - the form of the page contents, options are:
   * **html** (Default) - original html string being minified.
