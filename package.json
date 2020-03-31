@@ -1,6 +1,6 @@
 {
   "name": "hexo-generator-searchdb",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Seach data generator plugin for Hexo.",
   "main": "index",
   "directories": {
@@ -21,7 +21,7 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "nunjucks": "^3.2.0"
+    "nunjucks": "^3.2.1"
   },
   "bugs": {
     "url": "https://github.com/theme-next/hexo-generator-searchdb/issues"
