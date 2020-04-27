@@ -24,11 +24,11 @@
     "nunjucks": "^3.2.1"
   },
   "bugs": {
-    "url": "https://github.com/hexo-next/hexo-generator-searchdb/issues"
+    "url": "https://github.com/next-theme/hexo-generator-searchdb/issues"
   },
-  "homepage": "https://github.com/hexo-next/hexo-generator-searchdb#readme",
+  "homepage": "https://github.com/next-theme/hexo-generator-searchdb#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hexo-next/hexo-generator-searchdb.git"
+    "url": "git+https://github.com/next-theme/hexo-generator-searchdb.git"
   }
 }
