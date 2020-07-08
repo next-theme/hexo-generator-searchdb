@@ -14,10 +14,9 @@
     "search",
     "generator"
   ],
-  "author": "",
+  "author": "flashlab <zhengjuefei25@163.com>",
   "maintainers": [
-    "Mimi <stevenjoezhang@gmail.com> (https://zhangshuqiao.org)",
-    "flashlab <zhengjuefei25@163.com>"
+    "Mimi <stevenjoezhang@gmail.com> (https://zhangshuqiao.org)"
   ],
   "license": "MIT",
   "dependencies": {

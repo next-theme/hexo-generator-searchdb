@@ -4,7 +4,7 @@
 
 const path = require('path');
 
-var config = hexo.config.search = Object.assign({
+const config = hexo.config.search = Object.assign({
   path   : 'search.xml',
   field  : 'post',
   content: true,
