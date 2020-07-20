@@ -6,9 +6,6 @@
   "directories": {
     "lib": "./lib"
   },
-  "engines": {
-    "node": ">=10.9.0"
-  },
   "keywords": [
     "hexo",
     "search",
