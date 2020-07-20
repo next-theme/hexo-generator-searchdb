@@ -3,6 +3,9 @@
   "version": "1.3.1",
   "description": "Seach data generator plugin for Hexo.",
   "main": "index",
+  "scripts": {
+    "lint": "eslint index.js lib/"
+  },
   "directories": {
     "lib": "./lib"
   },
@@ -17,7 +20,7 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "nunjucks": "^3.2.1"
+    "nunjucks": "^3.2.2"
   },
   "bugs": {
     "url": "https://github.com/next-theme/hexo-generator-searchdb/issues"
@@ -26,5 +29,9 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/next-theme/hexo-generator-searchdb.git"
+  },
+  "devDependencies": {
+    "eslint": "^7.5.0",
+    "eslint-config-theme-next": "^1.2.1"
   }
 }
