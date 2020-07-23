@@ -1,5 +1,6 @@
 # hexo-generator-searchdb
 
+[![Build Status][github-image]][github-url]
 [![npm-image]][npm-url]
 [![hexo-image]][hexo-url]
 [![lic-image]](LICENSE)
@@ -61,6 +62,7 @@ You have two choices:
   2. write a [search script](https://github.com/next-theme/hexo-theme-next/blob/v8.0.0-rc.1/source/js/local-search.js). This script tells the browser how to grab search data and filter out contents what we're searching;
   3. tell hexo to [connect the above two part](https://github.com/next-theme/hexo-theme-next/blob/v8.0.0-rc.1/layout/_third-party/search/localsearch.njk).
 
+[github-image]: https://img.shields.io/github/workflow/status/next-theme/hexo-generator-searchdb/Linter?style=flat-square
 [npm-image]: https://img.shields.io/npm/v/hexo-generator-searchdb?style=flat-square
 [hexo-image]: https://img.shields.io/badge/hexo-%3E%3D%203.0-blue?style=flat-square
 [lic-image]: https://img.shields.io/npm/l/hexo-generator-searchdb?style=flat-square
@@ -69,5 +71,6 @@ You have two choices:
 [dm-image]: https://img.shields.io/npm/dm/hexo-generator-searchdb?style=flat-square
 [dt-image]: https://img.shields.io/npm/dt/hexo-generator-searchdb?style=flat-square
 
+[github-url]: https://github.com/next-theme/hexo-generator-searchdb/actions?query=workflow%3ALinter
 [npm-url]: https://www.npmjs.com/package/hexo-generator-searchdb
 [hexo-url]: https://hexo.io
