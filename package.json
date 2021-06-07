@@ -1,8 +1,13 @@
 {
   "name": "hexo-generator-searchdb",
-  "version": "1.3.3",
+  "version": "1.3.4",
   "description": "Seach data generator plugin for Hexo.",
   "main": "index",
+  "files": [
+    "index.js",
+    "lib",
+    "templates"
+  ],
   "scripts": {
     "lint": "eslint index.js lib/"
   },
