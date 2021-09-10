@@ -6,7 +6,8 @@
   "files": [
     "index.js",
     "lib",
-    "templates"
+    "templates",
+    "dist"
   ],
   "scripts": {
     "lint": "eslint index.js lib/"
