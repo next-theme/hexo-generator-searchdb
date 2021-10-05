@@ -57,10 +57,15 @@ After executing `hexo g` you will get the generated result at your public folder
 You have two choices:
 
 * you don't want to write search engine by yourself. There are many themes that take use this plugin for local searching that works out of box.
-* you are familiar with fetch API or jQuery Ajax and would like to write your own search engine. You can implement one by yourself according to the theme NexT. Read the [source code](https://github.com/next-theme/hexo-theme-next) of this theme. Generally there are 3 steps:
-  1. write a [search view](https://github.com/next-theme/hexo-theme-next/blob/v8.0.0/layout/_partials/search/localsearch.njk). This is the place for displaying a search form and search results;
-  2. write a [search script](https://github.com/next-theme/hexo-theme-next/blob/v8.0.0/source/js/local-search.js). This script tells the browser how to grab search data and filter out contents what we're searching;
-  3. tell hexo to [connect the above two part](https://github.com/next-theme/hexo-theme-next/blob/v8.0.0/layout/_third-party/search/localsearch.njk).
+* you are familiar with JavaScript and would like to write your own search engine. You can implement one by yourself according to the [template code `search.js`](https://github.com/next-theme/hexo-generator-searchdb/blob/main/dist/search.js). There is no documentation at present, but you can find its usage in the source code of the [theme NexT](https://github.com/next-theme/hexo-theme-next). Generally there are 3 steps:
+  1. write a [search view](https://github.com/next-theme/hexo-theme-next/blob/v8.8.0/layout/_partials/search/localsearch.njk). This is the place for displaying a search form and search results;
+  2. load the `search.js` script via CDN, for example:
+  ```html
+  <script src="https://cdn.jsdelivr.net/npm/hexo-generator-searchdb@1.4.0/dist/search.js"></script>
+  ```
+  A `LocalSearch` class is provided in the `search.js` which tells the browser how to grab search data and filter out contents what we're searching;
+
+  3. write a [search script](https://github.com/next-theme/hexo-theme-next/blob/v8.8.0/source/js/third-party/search/local-search.js), make use of the previous `LocalSearch` class.
 
 [github-image]: https://img.shields.io/github/workflow/status/next-theme/hexo-generator-searchdb/Linter?style=flat-square
 [npm-image]: https://img.shields.io/npm/v/hexo-generator-searchdb?style=flat-square
