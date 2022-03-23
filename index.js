@@ -9,8 +9,9 @@ hexo.config.search = Object.assign({
   field  : 'post',
   content: true,
   format : 'html'
-}, hexo.config.search);
-const config = hexo.config.search;
+}, hexo.config.theme_config.search === undefined ?
+  hexo.config.search : hexo.config.theme_config.search);
+const config = hexo.config.search
 
 // Add extension name if doesn't exist
 if (!path.extname(config.path)) {
