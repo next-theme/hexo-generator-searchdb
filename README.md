@@ -40,6 +40,7 @@ search:
 - **format** - the form of the page contents, options are:
   * **html** (Default) - original html string being minified.
   * **striptags** - original html string being minified, and remove all the tags.
+  * **striptagscode** - In addition to removing HTML tags, remove the code in the article and reduce the size。
   * **raw** - markdown text of each posts or pages.
 
 ## FAQ
