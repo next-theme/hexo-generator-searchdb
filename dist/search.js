@@ -215,7 +215,7 @@ class LocalSearch {
     const walk = document.createTreeWalker(body, NodeFilter.SHOW_TEXT, null);
     const allNodes = [];
     while (walk.nextNode()) {
-      if (!walk.currentNode.parentNode.matches('button, select, textarea')) allNodes.push(walk.currentNode);
+      if (!walk.currentNode.parentNode.matches('button, select, textarea, .mermaid')) allNodes.push(walk.currentNode);
     }
     allNodes.forEach(node => {
       const [indexOfNode] = this.getIndexByWord(keywords, node.nodeValue);
