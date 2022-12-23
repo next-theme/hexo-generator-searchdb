@@ -67,7 +67,7 @@ You have two choices:
 
   3. write a [search script](https://github.com/next-theme/hexo-theme-next/blob/v8.8.0/source/js/third-party/search/local-search.js), make use of the previous `LocalSearch` class.
 
-[github-image]: https://img.shields.io/github/workflow/status/next-theme/hexo-generator-searchdb/Linter?style=flat-square
+[github-image]: https://img.shields.io/github/actions/workflow/status/next-theme/hexo-generator-searchdb/linter.yml?branch=main&style=flat-square
 [npm-image]: https://img.shields.io/npm/v/hexo-generator-searchdb?style=flat-square
 [hexo-image]: https://img.shields.io/badge/hexo-%3E%3D%203.0-blue?style=flat-square
 [lic-image]: https://img.shields.io/npm/l/hexo-generator-searchdb?style=flat-square
