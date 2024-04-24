@@ -16,7 +16,7 @@ This plugin is used for generating a search index file, which contains all the n
 [![dt-image]][npm-url]
 
 ```bash
-$ npm install hexo-generator-searchdb
+npm install hexo-generator-searchdb
 ```
 
 ## Options
