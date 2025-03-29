@@ -5,7 +5,7 @@
 const path = require('path');
 
 hexo.config.search = Object.assign({
-  path   : 'search.xml',
+  path   : 'search.json',
   field  : 'post',
   content: true,
   format : 'html'
@@ -14,11 +14,11 @@ const config = hexo.config.search;
 
 // Add extension name if doesn't exist
 if (!path.extname(config.path)) {
-  config.path += '.xml';
+  config.path += '.json';
 }
 if (path.extname(config.path) === '.xml') {
   hexo.extend.generator.register('xml', require('./lib/xml_generator'));
 }
-if (path.extname(config.path) === '.json') {
+else if (path.extname(config.path) === '.json') {
   hexo.extend.generator.register('json', require('./lib/json_generator'));
 }
