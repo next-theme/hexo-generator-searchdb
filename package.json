@@ -1,6 +1,6 @@
 {
   "name": "hexo-generator-searchdb",
-  "version": "1.4.1",
+  "version": "1.5.0",
   "description": "Seach data generator plugin for Hexo.",
   "main": "index",
   "files": [
