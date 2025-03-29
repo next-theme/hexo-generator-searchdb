@@ -28,7 +28,7 @@ search:
   path: search.json
   field: post
   content: true
-  format: html
+  format: striptags
 ```
 
 - **path** - the path to the generated database file. Supports `.json` and `.xml` formats. If no file extension is provided, JSON format will be used by default.
@@ -38,8 +38,8 @@ search:
   * **all** - will cover all the posts and pages of your blog.
 - **content** - whether contains the whole content of each article. If `false`, the generated results only cover title and other meta info without mainbody. By default is `true`.
 - **format** - the form of the page contents, options are:
-  * **html** (Default) - original html string being minified.
-  * **striptags** - original html string being minified, and remove all the tags.
+  * **striptags** (Default) - original html string being minified, and remove all the tags.
+  * **html** - original html string being minified.
   * **raw** - markdown text of each posts or pages.
 
 ## FAQ

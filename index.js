@@ -8,7 +8,7 @@ hexo.config.search = Object.assign({
   path   : 'search.json',
   field  : 'post',
   content: true,
-  format : 'html'
+  format : 'striptags'
 }, hexo.config.search);
 const config = hexo.config.search;
 
@@ -18,7 +18,6 @@ if (!path.extname(config.path)) {
 }
 if (path.extname(config.path) === '.xml') {
   hexo.extend.generator.register('xml', require('./lib/xml_generator'));
-}
-else if (path.extname(config.path) === '.json') {
+} else if (path.extname(config.path) === '.json') {
   hexo.extend.generator.register('json', require('./lib/json_generator'));
 }
