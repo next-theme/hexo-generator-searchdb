@@ -38,6 +38,6 @@
   },
   "devDependencies": {
     "@next-theme/eslint-config": "0.0.4",
-    "eslint": "9.23.0"
+    "eslint": "9.24.0"
   }
 }
