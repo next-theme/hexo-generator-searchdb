@@ -37,7 +37,7 @@
     "url": "git+https://github.com/next-theme/hexo-generator-searchdb.git"
   },
   "devDependencies": {
-    "@next-theme/eslint-config": "0.0.4",
+    "@next-theme/eslint-config": "0.0.5",
     "eslint": "9.23.0"
   }
 }
